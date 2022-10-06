@@ -1,8 +1,11 @@
 import React from 'react'
 import '../components/CSS/CreatePage.css'
 import { BsUpload } from "react-icons/bs"
+import { useNavigate } from 'react-router-dom'
 
-function CreatePage() {
+const CreatePage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className='full-con'>
         <div className='createPage-con'>
@@ -29,7 +32,7 @@ function CreatePage() {
                     Where
                     <input className='input-con' type="text" name="name" placeholder='  Location'/>
                 </label>
-                <input className='submit--button' type="submit" value="Next" />
+                <input onClick={() => navigate("/events")} className='submit--button' type="submit" value="Next" />
             </div>
         </div>
     </div>
@@ -37,8 +40,3 @@ function CreatePage() {
 }
 
 export default CreatePage
-
-
-
-// Event name, Host name, Start and End time/date, 
-// Location and Event photo.

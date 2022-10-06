@@ -3,8 +3,12 @@ import '../components/CSS/EventsPage.css'
 import {BsFillCalendarDateFill} from "react-icons/bs"
 import { GoLocation } from "react-icons/go"
 import birthdayCake from '../images/BirthdayCake.png'
+import { useNavigate } from 'react-router-dom'
 
 function EventsPage() {
+
+  const navigate = useNavigate();
+
   return (
     <div className='events--text--con'>
       <div className='Birthday--text--con'>
@@ -25,8 +29,9 @@ function EventsPage() {
           <span className='to-date'>Suburb, State, Postcode</span>
         </div>
       </div>
+      <div onClick={() => navigate("/")} className='HomeButton'>Home</div>
       <div className='cake-con'>
-        <img className='cake-img' src={birthdayCake}/>
+        <img className='cake-img' alt="it's cake!" src={birthdayCake}/>
       </div>
     </div>
   )

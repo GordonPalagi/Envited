@@ -11,21 +11,28 @@
     top: 160px;
     left: 240px;
     color: #240D57;
+    font-family: Helvetica;
     
 }
 
 h2 {
     margin-bottom: -1px;
     font-size: 36px;
+    font-family: Helvetica;
+
 }
 
 .from-date {
     font-weight: 700;
+    font-family: Helvetica;
+
 }
 
 .to-date {
     color:#4F4F4F;
     font-weight: 400;
+    font-family: Helvetica;
+
 }
 
 .icon--con {
@@ -97,5 +104,24 @@ h2 {
 .cake-img {
     height: 500px;
     width: auto;
+}
+
+.HomeButton {
+    height: 40px;
+    width: 200px;
+    border: 1px solid black;
+    position: relative;
+    top: 500px;
+    left: 240px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: #FFFFFF;
+    font-family: Helvetica;
+    cursor: pointer;
 }
 
